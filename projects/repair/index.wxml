@@ -1,0 +1,34 @@
+<!--projects/repair/index.wxml-->
+<view class='container'>
+  <view class='wrap'>
+    <view class='tit'>请选择故障类型</view>
+    <checkbox-group class="mylist" bindchange='changes'>
+      <block wx:for="{{list}}" wx:key="{{item}}">
+        <view class='grid'>
+          <checkbox value='{{item.value}}' checked='{{item.checked}}'>
+            {{item.value}}
+          </checkbox>
+        </view>
+      </block>
+    </checkbox-group>
+  </view>
+  <view class='action'>
+    <view class='tit'>拍摄单车周围环境，便于维修师傅找车</view>
+    <view class='photo'>
+      <block wx:for="{{picUrl}}" wx:key="{{item}}">
+        <image src='{{item}}'>
+          <icon type='cancel' size='18' color="red" bindtap='delPic' data-index="{{index}}"></icon>
+        </image>
+      </block>
+      <text class='add' bindtap='clickPhoto'>{{actionTit}}</text>
+    </view>
+    <view class='inps'>
+      <input name='number' placeholder='车牌号' bindinput='changeNumber'></input>
+      <input name='desc' placeholder='备注' bindinput='changeDesc'></input>
+    </view>
+    <view class='sub'>
+      <button style="background-color:{{btnbg}};color:{{btncolor}}" disabled='{{btnkey}}' bindtap='subFn'>提交</button>
+    </view>
+  </view>
+
+</view>

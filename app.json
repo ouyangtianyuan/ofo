@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "projects/user/index",
+    "projects/index/index",
+    "projects/repair/index",
+    "projects/billing/index",
+    
+    "projects/scanReault/index"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#fee823",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "ofo 共享单车",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  }
+}

@@ -1,0 +1,9 @@
+/* projects/index/index.wxss */
+.container{
+  width:100%;
+  height: 100vh;
+}
+#mymap{
+  width:100%;
+  height:100%;
+}

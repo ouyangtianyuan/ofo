@@ -1,0 +1,16 @@
+<!--projects/billing/index.wxml-->
+<view class='container'>
+  <view class='number'>
+    <text>当前车牌号：{{number}}</text>
+  </view>
+  <view class='times'>
+    <view class='tit'>{{text}}</view>
+    <view class='con'>
+      {{h}} : {{m}} : {{s}}
+    </view>
+  </view>
+  <view class='end'>
+    <button type='warn' bindtap='end' disabled='{{clickbtn}}'>结束骑行</button>
+    <button class='retmap' bindtap='moveToMap'>回到地图</button>
+  </view>
+</view>
