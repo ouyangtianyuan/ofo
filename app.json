@@ -1,10 +1,11 @@
 {
   "pages": [
+     "projects/index/index",
+    "projects/wallet/index",
+    "projects/recharge/index",
     "projects/user/index",
-    "projects/index/index",
     "projects/repair/index",
     "projects/billing/index",
-    
     "projects/scanReault/index"
   ],
   "window": {
@@ -14,5 +15,10 @@
     "backgroundColor": "#eeeeee",
     "backgroundTextStyle": "light",
     "enablePullDownRefresh": false
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
   }
 }

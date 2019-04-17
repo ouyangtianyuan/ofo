@@ -52,7 +52,10 @@ Page({
           }
         })
       }
-      break
+      break;
+      case 5 :
+      this.moveToUser()
+      break;
     }
   },
   /**
@@ -143,6 +146,8 @@ Page({
     this.mapctx = wx.createMapContext('mymap')
     this.moveToCenter()
   },
+
+  //回到地图原点
   moveToCenter: function () {
     this.mapctx.moveToLocation()
   },
@@ -150,8 +155,13 @@ Page({
     wx.navigateTo({
       url: '../repair/index',
     })
-  }, //回到地图原点
+  },
 
+  moveToUser:function(){
+      wx.navigateTo({
+        url: '../user/index',
+      })
+  },
 
   /**
    * 生命周期函数--监听页面隐藏

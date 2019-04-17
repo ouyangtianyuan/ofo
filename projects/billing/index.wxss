@@ -21,10 +21,10 @@
   text-align:center;
 }
 .times .tit{
-  font-size:30rpx;
+ 
 }
 .times .con{
-  font-size:70rpx;
+  font-size:120rpx;
   margin-top:15rpx;
 }
 .end button{

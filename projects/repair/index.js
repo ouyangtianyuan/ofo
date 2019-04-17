@@ -134,7 +134,13 @@ Page({
       success: (res) => {
         wx.showToast({
           title: '提交成功',
-          icon:'success'
+          icon:'success',
+          duration:1500,
+          success: (res) => {
+              wx.navigateBack({
+                  delta:1
+              })
+          }
         })
       }
     })

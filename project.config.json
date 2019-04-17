@@ -4,18 +4,18 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
-		"uglifyFileName": true,
-		"nodeModules": true
+		"nodeModules": true,
+		"uglifyFileName": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.3.0",
+	"libVersion": "2.3.2",
 	"appid": "wx93b4927af0ca3667",
-	"projectname": "weixin2",
+	"projectname": "ofo",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},

@@ -23,7 +23,7 @@
       <text class='add' bindtap='clickPhoto'>{{actionTit}}</text>
     </view>
     <view class='inps'>
-      <input name='number' placeholder='车牌号' bindinput='changeNumber'></input>
+      <input name='number' type='number' placeholder='车牌号' bindinput='changeNumber'></input>
       <input name='desc' placeholder='备注' bindinput='changeDesc'></input>
     </view>
     <view class='sub'>

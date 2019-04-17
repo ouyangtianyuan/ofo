@@ -1,22 +1,24 @@
 <!--projects/user/index.wxml-->
 <view class='container'>
   <view class='user-info'>
-    <block wx:if="{{userinfo}} !==''">
+    <block wx:if="{{userInfo.userimg !==''}} ">
       <view class='img'>
-        <image src='{{userinfo.userimg}}'></image>
+        <view class='img-info'>
+          <image src='{{userInfo.userimg}}'></image>
+        </view>
       </view>
     </block>
-    <text class='username'>{{userinfo.username}}</text>
+    <text class='username'>{{userInfo.username}}</text>
   </view>
   <view class='money'>
-    <block wx:if="{{userinfo}} !==''">
-      <view class='main'>
+    <block wx:if="{{userInfo.userimg !==''}}">
+      <view class='main' bindtap='toWall'>
         <text>我的钱包</text>
         <text class='ic'>></text>
       </view>
     </block>
   </view>
   <view class='btn'>
-    <button class='{{btnclass}}' bindtap='login'>{{actionText}}</button>
+    <button open-type='getUserInfo' class='{{btnclass}}' bindtap='login'>{{actionText}}</button>
   </view>
 </view>
